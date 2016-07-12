@@ -153,3 +153,9 @@ Now you need to pass `$animate` into our directive function. We can pass specifi
 * [Angular API Reference / ngAnimate](https://docs.angularjs.org/api/ngAnimate)
 * [Angular ngClass Source Code](https://github.com/angular/angular.js/blob/master/src/ng/directive/ngClass.js)
 * [Animations the Angular Way - CSS Tricks](https://css-tricks.com/animations-the-angular-way/)
+
+
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
