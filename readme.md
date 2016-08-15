@@ -1,9 +1,11 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Animations the Angular Way
 
+<!--11:25 25 minutes -->
+
 ### Objectives
-- Dynamically apply and remove css classes using `ng-class` (see Lesson 1)
-- Animate elements with CSS transitions or keyframe animations (see Lesson 1)
-- Learn how to do animations _the Angular way_
+- **Dynamically apply** and remove css classes using `ng-class` (see Lesson 1)
+- **Animate elements** with CSS transitions or keyframe animations (see Lesson 1)
+- **Do animations** _the Angular way_
 
 
 The following lesson was deconstructed and rebuilt in code from a nice online tutorial video.
@@ -139,11 +141,17 @@ You may use `scope` or `$scope`. At this level they are equivalent.
 
 Angular's `$watch` service is like an event listener. By passing in `attrs` we can monitor any HTML attributes for changes in the current scope. When a change occurs, `$watch` recieves the new value and we can use that data to evoke changes in our app.
 
+This handles one direction of the fade.  How would we handle the other side?  I.e. what if newVal is false, how do we fade back in?
+
 Now we have our custom directive but we're still calling it on a specific element in the DOM.
 
 ### Step 4. It's All You.
 
-Now you need to pass `$animate` into our directive function. We can pass specific functionality to `$animate.addClass` and `.removeClass` using the `animation` service.
+Now you need to pass `$animate` into our directive function. 
+
+Then, we can pass specific functionality to `$animate.addClass` and `.removeClass` using the `animation` service (think `app.animation(...)`).  
+
+Check out the `$animate` documentation for the exact syntax of `addClass` and `removeClass` in your controller.  Check out the `ngAnimate` documentation for syntax of `app.animation(...)`. 
 
 #### Here are some excellent links:
 
@@ -151,6 +159,7 @@ Now you need to pass `$animate` into our directive function. We can pass specifi
 * [The `Applying Animations` step of the official Angular Tutorial](https://docs.angularjs.org/tutorial/step_12)
 * [Angular Developer Guide / Animations](https://docs.angularjs.org/guide/animations)
 * [Angular API Reference / ngAnimate](https://docs.angularjs.org/api/ngAnimate)
+* [Angular API Reference / $animate](https://docs.angularjs.org/api/ng/service/$animate)
 * [Angular ngClass Source Code](https://github.com/angular/angular.js/blob/master/src/ng/directive/ngClass.js)
 * [Animations the Angular Way - CSS Tricks](https://css-tricks.com/animations-the-angular-way/)
 
