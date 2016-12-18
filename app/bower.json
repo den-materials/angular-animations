@@ -16,6 +16,5 @@
     "tests"
   ],
   "dependencies": {
-    "gsap": "^1.18.2"
   }
 }
