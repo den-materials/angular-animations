@@ -103,7 +103,7 @@ That should do the trick, but manipulating the DOM inside a controller is a bad 
 
 ### Step 3. Let's leverage the power of directives!
 
-The directive is to be called `hideMe`. (That's `hide-me` in the markup. Or `hide_me`. Or `hide:me`.)
+The directive is to be called `hideMe`. (That's `hide-me` in the markup.)
 
 ```html
     hide-me="app.isHidden"
