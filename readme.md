@@ -1,5 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Animations the Angular Way
 
+<!--11:56 WDI3 -->
 <!--11:55 15 minutes -->
 
 ### Objectives
@@ -58,6 +59,7 @@ Now we can fire up the server and make sure things work.
 
 We should see a button and a badge on the page, and our sanity check in the Chrome Console. Now let's wire up some animation.
 
+<!--12:04 WDI3 -->
 <!--12:10 3 minutes -->
 
 ### Step 1. jQuery Animation (not recommended)
@@ -73,6 +75,7 @@ We already know how to use jQuery animations. This will work with or without Ang
 
 Generally speaking, _using jQuery is not the Angular Way._
 
+<!--12:10 WDI3 turning over to devs -->
 <!--12:13 7 minutes-->
 ### Step 2. Let's remove jQuery 
 
@@ -99,6 +102,7 @@ We also need to do something different with our `ng-controller` in order to call
 
 That should do the trick, but manipulating the DOM inside a controller is a bad idea for several reasons. The code is not reusable and it doesn't leverage the power of directives.
 
+<!--12:19 WDI3, decided to just demo the rest, ended 12:31 -->
 <!--12:20 5 minutes -->
 
 ### Step 3. Let's leverage the power of directives!
